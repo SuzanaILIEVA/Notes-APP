@@ -39,10 +39,10 @@ const Main = ({ notes, availableTags }: Props) => {
     <div className="container mx-auto py-5">
       {/* ust kisim */}
       <Stack direction="horizontal" className="justify-content-between">
-        <h1 className="d-flex gap-3 align-items-center">
+        <div className="d-flex gap-3 align-items-center">
           <img src="/note_logo.png" alt="" width={45} />
-          <span>Notlar</span>
-        </h1>
+          <h1>Notlar</h1>
+        </div>
 
         <Link to="/new">
           <Button>Oluştur</Button>

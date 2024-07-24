@@ -7,6 +7,7 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 import { Note, NoteData, Tag } from "./types";
 import { v4 } from "uuid";
 import Layout from "./Components/Layout";
+import Undefined from "./Pages/Undefined";
 
 const App = () => {
   // useLocalStorage: hem state'i tutar hem locale kaydeder
@@ -74,6 +75,7 @@ const App = () => {
               }
             />
           </Route>
+          <Route path="/undefined" element={<Undefined/>}/>
         </Routes>
       </BrowserRouter>
     </div>
