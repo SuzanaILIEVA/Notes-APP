@@ -40,7 +40,7 @@ const Main = ({ notes, availableTags }: Props) => {
       {/* ust kisim */}
       <Stack direction="horizontal" className="justify-content-between">
         <div className="d-flex gap-3 align-items-center">
-          <img src="/note_logo.png" alt="" width={45} />
+          <img src="/note_logo.png" width={45} alt="white notebook on red background"/>
           <h1>Notlar</h1>
         </div>
 
@@ -53,14 +53,14 @@ const Main = ({ notes, availableTags }: Props) => {
       <Form className="mt-5">
         <Row>
           <Col>
-            <Form.Group>
+            <Form.Group controlId="title">
               <Form.Label>Başlığa Göre Ara</Form.Label>
               <Form.Control onChange={(e) => setTitle(e.target.value)} />
             </Form.Group>
           </Col>
           <Col>
-            <Form.Group>
-              <Form.Label>Etikete Göre Ara</Form.Label>
+            <Form.Group controlId="select">
+              <Form.Label >Etikete Göre Ara</Form.Label>
               <ReactSelect 
               onChange={(all_tags) => setSelectedTags(all_tags as Tag[])}
                 className="text-black"
